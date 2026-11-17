@@ -72,14 +72,35 @@ También puedes usar la extensión **Live Server** de VS Code para que la págin
 
 ## Capturas
 
-| Página | Móvil | Escritorio |
-|---|---|---|
-| Inicio | [Ver](screenshots/index-movil.png) | [Ver](screenshots/index-escritorio.png) |
-| Listado | [Ver](screenshots/peticiones-movil.png) | [Ver](screenshots/peticiones-escritorio.png) |
-| Detalle y firma | [Ver](screenshots/peticion-movil.png) | [Ver](screenshots/peticion-escritorio.png) |
-| Crear petición | [Ver](screenshots/crear-movil.png) | [Ver](screenshots/crear-escritorio.png) |
+Haz clic en cualquier captura para verla a tamaño completo. En la carpeta [`screenshots/`](screenshots/) también están las versiones de tablet.
 
-En la carpeta [`screenshots/`](screenshots/) también están las versiones de tablet.
+### Inicio
+
+<p>
+  <img src="screenshots/index-escritorio.png" alt="Inicio en escritorio" width="68%">
+  <img src="screenshots/index-movil.png" alt="Inicio en móvil" width="22%">
+</p>
+
+### Listado de peticiones
+
+<p>
+  <img src="screenshots/peticiones-escritorio.png" alt="Listado en escritorio" width="68%">
+  <img src="screenshots/peticiones-movil.png" alt="Listado en móvil" width="22%">
+</p>
+
+### Detalle y firma
+
+<p>
+  <img src="screenshots/peticion-escritorio.png" alt="Detalle en escritorio" width="68%">
+  <img src="screenshots/peticion-movil.png" alt="Detalle en móvil" width="22%">
+</p>
+
+### Crear petición
+
+<p>
+  <img src="screenshots/crear-escritorio.png" alt="Crear petición en escritorio" width="68%">
+  <img src="screenshots/crear-movil.png" alt="Crear petición en móvil" width="22%">
+</p>
 
 ## Autor
 
