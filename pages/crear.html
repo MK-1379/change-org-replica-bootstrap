@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empieza una petición · Change.org</title>
+    <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg border-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand logo fs-3 me-lg-5" href="../index.html">change.org</a>
+            <a class="btn btn-outline-light btn-sm ms-auto me-2 d-lg-none" href="../pages/crear.html">Inicia una
+                petición</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto gap-4">
+                    <li class="nav-item d-none d-lg-block fw-bold"><a class="nav-link"
+                            href="../pages/peticiones.html">Mis peticiones</a></li>
+                    <li class="nav-item fw-bold"><a class="nav-link" href="#">Programa de socios/as</a></li>
+                    <li class="nav-item fw-bold"><a class="nav-link" href="../pages/peticiones.html"><i
+                                class="bi bi-search"></i> Buscar</a></li>
+                </ul>
+                <ul class="navbar-nav align-items-lg-center fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="#">Entrar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="bg-body-secondary pt-3">
+        <form class="needs-validation" novalidate>
+            <div class="container">
+                <div class="bg-body rounded-top-3 overflow-hidden">
+                    <div class="bg-black py-5">
+                        <div class="row justify-content-center mx-0">
+                            <div class="col-11 col-lg-8">
+                                <span class="barra-roja d-block mb-3"></span>
+                                <label for="titulo" class="form-label small">Título</label>
+                                <textarea class="form-control bg-black border-light fs-1 fw-bold" id="titulo" rows="2"
+                                    placeholder="Tu título único" maxlength="90" required></textarea>
+                                <div class="invalid-feedback">
+                                    <i class="bi bi-exclamation-triangle-fill"></i> El título es obligatorio.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mx-0 py-4">
+                        <div class="col-11 col-lg-8">
+                            <div class="d-flex gap-2 mb-4">
+                                <button type="button"
+                                    class="btn btn-outline-secondary btn-sm fw-bold p-2 px-3 rounded-3" disabled>
+                                    <i class="bi bi-image"></i> Crear imagen
+                                </button>
+                                <label for="imagen" class="btn btn-outline-light btn-sm fw-bold p-2 px-3 rounded-3">
+                                    <i class="bi bi-upload"></i> Usar mi foto
+                                </label>
+                                <input type="file" class="visually-hidden" id="imagen" accept="image/png, image/jpeg">
+                            </div>
+
+                            <label for="causa" class="h2 fw-bold mb-3">La causa</label>
+                            <div class="btn-toolbar bg-primary-subtle border border-bottom-0 rounded-top p-1" role="toolbar" aria-label="Formato de texto">
+                                <div class="btn-group me-1">
+                                    <button type="button" class="btn btn-sm" aria-label="Negrita"><i class="bi bi-type-bold"></i></button>
+                                    <button type="button" class="btn btn-sm" aria-label="Cursiva"><i class="bi bi-type-italic"></i></button>
+                                    <button type="button" class="btn btn-sm" aria-label="Lista numerada"><i class="bi bi-list-ol"></i></button>
+                                    <button type="button" class="btn btn-sm" aria-label="Lista"><i class="bi bi-list-ul"></i></button>
+                                    <button type="button" class="btn btn-sm" aria-label="Enlace"><i class="bi bi-link-45deg"></i></button>
+                                    <button type="button" class="btn btn-sm" aria-label="Vídeo"><i class="bi bi-play-btn"></i></button>
+                                    <button type="button" class="btn btn-sm" aria-label="Imagen"><i class="bi bi-image"></i></button>
+                                    <button type="button" class="btn btn-sm" aria-label="Ayuda"><i class="bi bi-question-circle"></i></button>
+                                </div>
+                            </div>
+                            <textarea class="form-control rounded-top-0" id="causa" rows="12" minlength="50" required></textarea>
+                            <div class="invalid-feedback">
+                                <i class="bi bi-exclamation-triangle-fill"></i> La descripción es obligatoria.
+                            </div>
+                            <fieldset class="mt-5">
+                                <legend class="h2 fw-bold mb-3">¿Dónde quieres lograr el cambio?</legend>
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <input type="radio" class="btn-check" name="ambito" id="local" checked>
+                                    <label class="btn btn-outline-light" for="local"><i class="bi bi-geo-alt"></i>
+                                        Local</label>
+                                    <input type="radio" class="btn-check" name="ambito" id="nacional">
+                                    <label class="btn btn-outline-light" for="nacional"><i class="bi bi-flag"></i>
+                                        Nacional</label>
+                                    <input type="radio" class="btn-check" name="ambito" id="global">
+                                    <label class="btn btn-outline-light" for="global"><i class="bi bi-globe2"></i>
+                                        Global</label>
+                                </div>
+                                <label for="ubicacion" class="form-label">Ubicación</label>
+                                <input type="text" class="form-control" id="ubicacion"
+                                    placeholder="Ej.: Logroño, La Rioja" required>
+                                <div class="invalid-feedback"><i class="bi bi-exclamation-triangle-fill"></i> Indica la
+                                    ubicación.</div>
+                            </fieldset>
+
+                            <fieldset class="mt-5">
+                                <legend class="h2 fw-bold mb-3">¿Sobre qué tema trata?</legend>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <input type="checkbox" class="btn-check" id="temaSanidad">
+                                    <label class="btn btn-outline-primary btn-sm" for="temaSanidad">Sanidad</label>
+                                    <input type="checkbox" class="btn-check" id="temaEducacion">
+                                    <label class="btn btn-outline-primary btn-sm" for="temaEducacion">Educación</label>
+                                    <input type="checkbox" class="btn-check" id="temaMedio">
+                                    <label class="btn btn-outline-primary btn-sm" for="temaMedio">Medio Ambiente</label>
+                                    <input type="checkbox" class="btn-check" id="temaAnimales">
+                                    <label class="btn btn-outline-primary btn-sm" for="temaAnimales">Animales</label>
+                                    <input type="checkbox" class="btn-check" id="temaJusticia">
+                                    <label class="btn btn-outline-primary btn-sm" for="temaJusticia">Justicia</label>
+                                </div>
+                            </fieldset>
+
+                            <div class="mt-5">
+                                <label for="destinatario" class="h2 fw-bold mb-3">¿Quién puede hacer realidad este cambio?</label>
+                                <input type="text" class="form-control" id="destinatario" placeholder="Ej.: Ayuntamiento de Logroño" required>
+                                <div class="invalid-feedback"><i class="bi bi-exclamation-triangle-fill"></i> Indica a quién va dirigida.</div>
+                            </div>
+
+                            <fieldset class="mt-5">
+                                <legend class="h2 fw-bold mb-3">Tus datos</legend>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="nombre" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre" autocomplete="given-name" required>
+                                        <div class="invalid-feedback">Escribe tu nombre.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="apellidos" class="form-label">Apellidos</label>
+                                        <input type="text" class="form-control" id="apellidos" autocomplete="family-name" required>
+                                        <div class="invalid-feedback">Escribe tus apellidos.</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="email" class="form-label">Correo electrónico</label>
+                                        <input type="email" class="form-control" id="email" autocomplete="email" required>
+                                        <div class="invalid-feedback">Introduce un correo válido.</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="condiciones" required>
+                                            <label class="form-check-label" for="condiciones">Acepto las Condiciones de servicio y la Política de privacidad</label>
+                                            <div class="invalid-feedback">Debes aceptar las condiciones.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="alert alert-success mt-4 mb-0 d-none" role="status">¡Petición creada!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-bg-primary bg-gradient py-3">
+                <div class="container">
+                    <p class="mb-2">
+                        <i class="bi bi-hand-index me-2"></i>
+                        <strong class="fs-5">Este es un borrador sin guardar</strong>
+                        ¡Continúa para publicar y compartir!
+                    </p>
+                    <a href="./peticion.html" class="btn btn-outline-light btn-sm fw-bold ms-4 px-3">Vista previa de mi
+                        petición</a>
+                </div>
+            </div>
+
+            <div class="sticky-bottom bg-body border-top">
+                <div class="container d-flex justify-content-end gap-2 py-3">
+                    <a href="../index.html" class="btn btn-outline-light btn-lg fw-bold">Volver</a>
+                    <button type="submit" class="btn btn-warning btn-lg fw-bold">Publicar petición</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
