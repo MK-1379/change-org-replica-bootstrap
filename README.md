@@ -4,7 +4,9 @@ Réplica visual de cuatro páginas de [Change.org](https://www.change.org), maqu
 
 Práctica de la asignatura **Diseño de Interfaces Web (DIW)** · 2º de Desarrollo de Aplicaciones Web (DAW).
 
-> ⚠️ Proyecto con fines exclusivamente educativos. No está afiliado a Change.org. Los formularios son visuales: no se envía ni se guarda ningún dato.
+URL: https://mk-1379.github.io/change-org-replica-bootstrap/
+
+>  Proyecto con fines exclusivamente educativos. No está afiliado a Change.org. Los formularios son visuales: no se envía ni se guarda ningún dato.
 
 ## Páginas
 
